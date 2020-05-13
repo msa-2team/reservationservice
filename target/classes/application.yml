@@ -1,7 +1,5 @@
 server:
-  port: 8080
----
-
+  port: 8081
 spring:
   profiles: default
   jpa:
@@ -35,10 +33,10 @@ logging:
   level:
     org.hibernate.type: trace
     org.springframework.cloud: debug
-server:
-  port: 8081
----
 
+---
+server:
+  port: 8080
 spring:
   profiles: docker
   cloud:
